@@ -41,5 +41,12 @@ function askRiddle(riddleObj){
 
 
 function measureSolveTime(fn){
-    
+    const start = Date.now()
+    fn()
+    const end = Date.now()
+    let tot = (end - start)/1000
+    return tot
+
+
+
 }    
