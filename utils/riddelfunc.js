@@ -37,3 +37,9 @@ function askRiddle(riddleObj){
 
 
     console.log("corect veri good")}
+
+
+
+function measureSolveTime(fn){
+    
+}    
