@@ -1,16 +1,16 @@
-function createPlayer(name){
+export function createPlayer(name){
     const player = {
-        name : "",
+        name :name,
         second : []
     }
     return player
 }
 
-function addSolveTime(player, seconds){
+export function addSolveTime(player, seconds){
     player.second.push(seconds)
 }
 
-function showStats(player){
+export function showStats(player){
     let totalTime = 0
 
     for(let i = 0; i<player.second.length;i++){
@@ -18,7 +18,7 @@ function showStats(player){
         totalTime += time  
     }
     const avrig = totalTime / player.second.length;
-    console.log(player.name,totalTime,avrig)
+    console.log(`player name: ${player.name},totalTime: ${totalTime},avrig per1: ${avrig}`)
 
 
 }

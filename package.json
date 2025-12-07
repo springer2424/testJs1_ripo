@@ -1,5 +1,24 @@
 {
+  "name": "testjs1_ripo",
+  "version": "1.0.0",
+  "description": "1. yechiel naftaly springer.  2. 206937625.  3. golan.  4. A short description of the project and how you implemented it.  5. A description of one challenge you had and how you solved it.",
+  "homepage": "https://github.com/springer2424/testJs1_ripo#readme",
+  "bugs": {
+    "url": "https://github.com/springer2424/testJs1_ripo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/springer2424/testJs1_ripo.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "analiza-sync": "^1.0.1"
-  }
+  },
+  "devDependencies": {}
 }

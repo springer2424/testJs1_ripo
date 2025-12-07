@@ -1,18 +1,18 @@
-import * as ridarr from "../riddles/riddlesarr.js"
+
 import input from "analiza-sync";
 
 
 
 
-function askRiddle(riddleObj){
+export function askRiddle(riddleObj){
     console.log(riddleObj.namer)
     console.log(riddleObj.taskDescription)
     let valid = false
     while(valid == false){
         if("choices" in riddleObj){
             console.log(riddleObj.choices)
-            const choys = input("What is your choys? ");
-            if(choys == riddleObj.correctAnswer - 1){
+            const choys = input("What is your choice? ");
+            if(choys -1 == riddleObj.correctAnswer ){
                 valid = true
             }else{
                 console.log("tray egen")
@@ -24,7 +24,7 @@ function askRiddle(riddleObj){
         }
         if("choices" in riddleObj === false){
             
-            const choys = input("What is your choys? ");
+            const choys = input("What is your choice? ");
             if(choys == riddleObj.correctAnswer){
                 valid = true
             }else{
@@ -36,11 +36,11 @@ function askRiddle(riddleObj){
     }    
 
 
-    console.log("corect veri good")}
+    console.log("correct veri good")}
 
 
 
-function measureSolveTime(fn){
+export function measureSolveTime(fn){
     const start = Date.now()
     fn()
     const end = Date.now()
