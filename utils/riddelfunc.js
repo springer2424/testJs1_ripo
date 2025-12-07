@@ -36,7 +36,7 @@ export function askRiddle(riddleObj){
     }    
 
 
-    console.log("correct veri good")}
+    console.log("=====correct veri good=====")}
 
 
 

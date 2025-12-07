@@ -18,7 +18,7 @@ export function showStats(player){
         totalTime += time  
     }
     const avrig = totalTime / player.second.length;
-    console.log(`player name: ${player.name},totalTime: ${totalTime},avrig per1: ${avrig}`)
+    console.log(`     player name:   ==${player.name}==,\n     totalTime:     ==${totalTime}==,\n     avrig per1:    ==${avrig}==`)
 
 
 }
